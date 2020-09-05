@@ -1,7 +1,7 @@
 ---
 title: "Tufte Demo"
 subtitle: "marcucius massage"
-author: "mda"
+author: "marcucius"
 date: "`r Sys.Date()`"
 # documentclass: tufte-book
 # classoption: titlepage
@@ -17,7 +17,7 @@ output:
   bookdown::tufte_book2:
     citation_package: natbib
     latex_engine: xelatex
-bibliography: mybib.bib
+bibliography: sample-tufte.bib
 biblio-style: "apalike"
 link-citations: yes
 indent: true
