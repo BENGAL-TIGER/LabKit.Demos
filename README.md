@@ -1,4 +1,4 @@
-<div style="width:100%; background:#fdd023; padding:0.5em;">
+<div style="width:100%; background:#fbf8e3; padding:0.5em;">
   <img src="work/assets/JackJaubert,tigereyes.png" />
   <div style="display:flex;color:#461d7c;">
     <div style="flex: 0 1; text-align:left; ">

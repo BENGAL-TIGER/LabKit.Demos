@@ -1,0 +1,12 @@
+name: youcan38
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - jupyterlab
+  - jupyter_contrib_nbextensions
+  - appmode
+  - codebraid
+  - matplotlib
+prefix: /Users/psydat/anaconda3/envs/youcan38
