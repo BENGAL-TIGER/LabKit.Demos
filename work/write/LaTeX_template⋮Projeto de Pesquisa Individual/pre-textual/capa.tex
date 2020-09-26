@@ -1,0 +1,40 @@
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% File  : capa
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+% Limpa os estilos de página
+  \thispagestyle{empty}
+
+% Desenho no fundo da página
+  \ThisCenterWallPaper{1}{img/INOVA_capa_relatorio}
+
+% Cria uma mini-página para inserir os dados da capa usando 70% da largura do texto
+    \begin{minipage}{0.6\textwidth}
+      \begin{flushleft}
+          \sffamily
+          % Parte superior da capa
+          \vspace{2.6cm}          
+          \LARGE \textbf{\ppitipo} \\
+          \footnotesize \textcolor{black!60}{\ppiid} \\
+          \Huge \textbf{\projpesq} \\
+      \end{flushleft}
+    \end{minipage}%
+
+    \vspace{3cm}
+    \begin{minipage}{0.6\textwidth}
+          % Rodapé da capa
+          \sffamily
+          
+          \rule{\textwidth}{0.2mm}
+          Projeto de Pesquisa Individual vinculado ao projeto \projeto \\[0.5cm]
+          Autor: \textbf{\pesquisador} \\
+          Orientador: \textbf{\Orientador} \\[-0.2cm]
+          \rule{\textwidth}{0.2mm}\\
+    \end{minipage}%
+    
+    \vfill
+    \begin{minipage}{0.6\textwidth}
+       \ppilocal \\[0.2cm]
+       \ppidata \\[0.2cm]
+       \tiny Versão \ppiversao \\
+    \end{minipage}%

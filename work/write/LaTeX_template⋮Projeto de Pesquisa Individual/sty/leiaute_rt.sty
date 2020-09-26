@@ -1,0 +1,133 @@
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% File      : inova_timbrado.sty
+% Type      : TeX
+% Versão    : 1.0
+%
+% Content   : Layout para papel timbrado INOVA
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%
+%---------------------------------------------------------------------
+
+% Margens da página
+\setulmarginsandblock{2.5cm}{3.5cm}{*}
+\setlrmarginsandblock{3cm}{3cm}{*}
+\setheadfoot{1cm}{2cm}
+\checkandfixthelayout
+
+% Altera o espaçamento entre o cabeçalho e o início do texto
+\setlength{\headsep}{1.5cm}
+\addtolength{\textheight}{0.5cm}
+
+% Remove a indentação dos parágrafos
+%\setlength\parindent{0pt}
+
+% Cria novos estilos de cabeçalhos e rodapés
+\makepagestyle{inova}
+\makeoddhead{inova}
+{}
+{}
+{\includegraphics[width=4cm]{img/INOVA_logo}\inovacopyright}
+
+\makeevenhead{inova}
+{}
+{}
+{\includegraphics[width=4cm]{img/INOVA_logo}\inovacopyright}
+
+%\makeheadrule{inova}{\textwidth}{\normalrulethickness}
+
+% Rodapés para páginas textuais
+\makeoddfoot{inova}
+{\tiny \sffamily \color{black!60}%
+    \textsf{INOVA Instituto de Ciência, Tecnologia e Inovação} \\%
+    \textsf{\inovaendereco\ | CEP \inovacep} \\%
+    \textsf{\inovatelefone} \\%
+}
+{}
+{\tiny \sffamily \color{black!60}%
+    \textsf{Página \thepage\ de \pageref*{LastPage}} \\%
+    \textsf{\inovaurl} \\%
+    \textsf{\inovaemail} \\%
+}
+
+\makeevenfoot{inova}
+{\tiny \sffamily \color{black!60}%
+    \textsf{INOVA Instituto de Ciência, Tecnologia e Inovação} \\%
+    \textsf{\inovaendereco\ | CEP \inovacep} \\%
+    \textsf{\inovatelefone} \\%
+}
+{}
+{\tiny \sffamily \color{black!60}%
+    \textsf{Página \thepage\ de \pageref*{LastPage}} \\%
+    \textsf{\inovaurl} \\%
+    \textsf{\inovaemail} \\%
+}
+
+\makefootrule{inova}{\textwidth}{\normalrulethickness}{0pt}
+
+
+\makepagestyle{inovapre}
+\makeoddhead{inovapre}
+{}
+{}
+{}
+
+\makeevenhead{inovapre}
+{}
+{}
+{}
+
+%\makeheadrule{inovapre}{\textwidth}{\normalrulethickness}
+
+% Rodapés para páginas textuais
+\makeoddfoot{inovapre}
+{\tiny \sffamily \color{black!60}%
+    \textsf{INOVA Instituto de Ciência, Tecnologia e Inovação} \\%
+    \textsf{\inovaendereco\ | CEP \inovacep} \\%
+    \textsf{\inovatelefone} \\%
+}
+{}
+{\tiny \sffamily \color{black!60}%
+    \textsf{Página \thepage\ de \pageref*{LastPage}} \\%
+    \textsf{\inovaurl} \\%
+    \textsf{\inovaemail} \\%
+}
+
+\makeevenfoot{inovapre}
+{\tiny \sffamily \color{black!60}%
+    \textsf{INOVA Instituto de Ciência, Tecnologia e Inovação} \\%
+    \textsf{\inovaendereco\ | CEP \inovacep} \\%
+    \textsf{\inovatelefone} \\%
+}
+{}
+{\tiny \sffamily \color{black!60}%
+    \textsf{Página \thepage\ de \pageref*{LastPage}} \\%
+    \textsf{\inovaurl} \\%
+    \textsf{\inovaemail} \\%
+}
+
+\makefootrule{inovapre}{\textwidth}{\normalrulethickness}{0pt}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\newcounter{bbb1}
+\newcounter{bbb2}
+\newcounter{bbb3}
+\newcounter{bbb4}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+%---------------------------------------------------------------------
+% Memorandos e Documentos Oficiais
+%---------------------------------------------------------------------
+\newcommand{\memo}[1]{\noindent{\textsc{memorando:  n\ele~#1/\inova}}}
+\newcommand{\carta}[1]{\noindent{\textsc{carta:  n\ele~#1/\inova}}}
+\newcommand{\oficio}[1]{\noindent{\textsc{of\'{i}cio n\ele~#1/\inova}}}
+\newcommand{\bsb}[3]{\hfill{Bras\'{i}lia, #1 de #2 de #3.}\vspace{.3cm}}
+\newcommand{\cabecalho}[1]{\noindent#1\vspace{1cm}}
+\newcommand{\para}[1]{\noindent\textsc{para:~}\hspace{1.3cm}\noindent#1}
+%\newcommand{\assunto}[1]{\noindent\textsc{assunto:~}\hspace{0.8cm}\noindent#1\vspace{1cm}}
+\newcommand{\assunto}[1]{\noindent\textsc{assunto:~}\hspace{0.8cm}\begin{minipage}[t]{12.5cm}#1\end{minipage}\vspace{1cm}}
+\newcommand{\abertura}[1]{\noindent#1\vspace{.2cm}}
+%\newcommand{\HRule}{\rule{\linewidth}{0.3mm}}
+
+%---------------------------------------------------------------------
+% Fim de arquivo
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

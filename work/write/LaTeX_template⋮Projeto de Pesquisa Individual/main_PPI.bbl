@@ -1,0 +1,20 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Costa 2010]{costa_um_2010}
+\abntrefinfo{Costa}{COSTA}{2010}
+{COSTA, I.~M.
+\emph{{Um m{\'e}todo para Arquitetura da Informa{\c c}{\~a}o: fenomenologia
+  como base para o desenvolvimento de arquiteturas da informa{\c c}{\~a}o
+  aplicadas}}.
+Tese (Disserta{\c c}{\~a}o (Mestrado em Ci{\^e}ncias da Informa{\c c}{\~a}o e
+  Documenta{\c c}{\~a}o)) --- Universidade de Bras{\'\i}lia, Faculdade de
+  Ci{\^e}ncia da Informa{\c c}{\~a}o, Bras{\'\i}lia, mar. 2010. Orientador:
+  Mamede Lima-Marques.
+Dispon{\'\i}vel em: \url{http://repositorio.unb.br/handle/10482/7087}.}
+
+\end{thebibliography}

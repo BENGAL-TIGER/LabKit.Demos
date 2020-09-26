@@ -1,0 +1,64 @@
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%    File      : ppi_cronograma
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A  \autoref{fig:cronograma} apresenta o cronograma de execução da pesquisa.
+
+\begin{figure}[H]
+    \caption{Cronograma do Projeto}\label{fig:cronograma}
+    \begin{ganttchart}[
+        y unit title=0.7cm,
+        y unit chart=0.6cm,
+        x unit=0.65cm,
+        title/.append style={draw=none, fill=black!80},
+        title label font=\sffamily\color{white},
+        title label node/.append style={below=-1.6ex},
+        title height=1,
+        bar/.append style={draw=none, fill=black!50},
+        bar height=.5,
+        bar label font=\sffamily\footnotesize\color{black!50},
+        group right shift=0,
+        group top shift=.6,
+        group height=.3,
+        group peaks height=.2,
+        group label font=\sffamily,
+        milestone label font=\sffamily\footnotesize\color{black!80},
+        bar incomplete/.append style={fill=maroon},
+        hgrid=true,vgrid=true,
+        canvas/.style=%
+        {shape=rectangle, draw=black!70, dashed, thick}
+        ]{1}{16}
+        
+        \gantttitle{Anos / Trimestres}{16} \\
+        \gantttitle{1º Ano}{4} \gantttitle{2º Ano}{4} \gantttitle{3º Ano}{4} \gantttitle{4º Ano}{4} \\
+        \gantttitlelist{1,...,16}{1} \\
+        
+        \ganttgroup{Revisão de Literatura}{1}{8} \\
+        \ganttbar{Comunicação}{1}{8} \\
+        \ganttbar{Arquitetura da Informação}{1}{7} \\
+        \ganttbar{Ontologias}{1}{5} \\
+        \ganttmilestone{Artigo 1}{4} \\
+        \ganttbar{Big Data fotográfico}{5}{7} \\
+        \ganttbar{Outros temas de interesse}{5}{7} \\
+        \ganttmilestone{Artigo 2}{7} \\
+        \ganttbar{Aspectos emocionais e cognitivos}{5}{8} \\
+        \ganttbar{Métodos de pesquisas qualitativas}{5}{8} \\
+        \ganttmilestone{Defesa de Qualificação}{8} \\
+        
+        \ganttgroup{Pesquisa Qualitativa}{9}{12} \\
+        \ganttbar{Planejamento}{9}{10} \\
+        \ganttbar{Aplicação}{10}{10} \\
+        \ganttbar{Interpretação e relatórios}{11}{12} \\
+        \ganttmilestone{Artigo 3}{12} \\
+        
+        \ganttgroup{Elaboração de Modelos}{13}{16} \\
+        \ganttbar{Fundamentação e detalhamento}{13}{14} \\
+        \ganttbar{Critérios para validação}{13}{14} \\
+        \ganttbar{Aplicação}{14}{15} \\
+        \ganttbar{Validação}{15}{16} \\
+        \ganttmilestone{Artigo 4}{15} \\
+        \ganttmilestone{Defesa de Tese}{16}
+        
+    \end{ganttchart}
+\end{figure}
+
