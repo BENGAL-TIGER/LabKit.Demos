@@ -1,0 +1,275 @@
+@import "Lato2OFLWeb/Lato/latofonts.css";
+
+
+:root {
+	--cellx: 200px;
+  --celly: 240px;
+	
+	--mcs_problem_margin: 0px;
+	
+	--mcs-color-tooltip-text: #007bff;
+	--royalpurple: 70, 29, 124;
+	--mcs-primary: #007bff;
+	--mcs-primary-rgb: 0, 123, 255;
+	--mcs-secondary: #6c757d;
+	--mcs-success: #28a745;
+	--mcs-info: #17a2b8;
+	--mcs-info-rgb: 23, 162, 184;
+	--mcs-warning: #ffc107;
+	--mcs-warning-rgb: 255, 193, 7;
+	--mcs-danger: #dc3545;
+	--mcs-light: #f8f9fa;
+	--mcs-dark: #343a40;
+	--mcs-that-fonky-blue-i-like: 70, 29, 255;
+	--mcs_that_bomb_ass_red: #ff2600;
+	/*--mcs-color-tooltip-text: #ff0000;*/
+	
+	--mcs_gray_100: #f8f9fa;
+	--mcs_gray_200: #e9ecef;
+	--mcs_gray_300: #dee2e6;
+	--mcs_gray_400: #ced4da;
+	--mcs_gray_500: #adb5bd;
+	--mcs_gray_600: #6c757d;
+	--mcs_gray_700: #495057;
+	--mcs_gray_800: #343a40;
+	--mcs_gray_900: #212529;
+}
+
+/* === callouts like those in bootstrap documentation*/
+
+/* from Chris Pratt: https://cpratt.co/twitter-bootstrap-callout-css-styles/ */
+
+.mcs-bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 6px;
+}
+.mcs-bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.mcs-bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.mcs-bs-callout code {
+    border-radius: 3px;
+}
+.mcs-bs-callout+.mcs-bs-callout {
+    margin-top: -5px;
+}
+.mcs-bs-callout-default {
+    border-left-color: #777;
+}
+.mcs-bs-callout-default h4 {
+    color: #777;
+}
+.mcs-bs-callout-primary {
+    border-left-color: #428bca;
+}
+.mcs-bs-callout-primary h4 {
+    color: #428bca;
+}
+.mcs-bs-callout-success {
+    border-left-color: #5cb85c;
+}
+.mcs-bs-callout-success h4 {
+    color: #5cb85c;
+}
+.mcs-bs-callout-danger { 
+    border-left-color: #d9534f;
+}
+.mcs-bs-callout-danger h4 {
+    color: #d9534f;
+}
+.mcs-bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.mcs-bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.mcs-bs-callout-info {
+    border-left-color: #5bc0de;
+}
+.mcs-bs-callout-info h4 {
+    color: #5bc0de;
+}
+
+
+/*____ marcucius ________________________ */
+ 
+/*__ mcs numbering _____________ */
+.mcs-problems {
+	counter-reset: chapter_number 0 all_problems 0;
+	display: ;
+}
+
+.mcs-chapter {
+	counter-increment: chapter_number;
+	counter-reset: chapter_problem_number;
+}
+
+.mcs-problem {
+	counter-increment: chapter_problem_number;
+}
+
+.mcs-problem-head .head-center {
+	font-size: 0.85em;
+	font-family: LatoWeb;
+	color: var(--mcs_gray_600);
+}
+
+.mcs-problem-head .head-center img {
+	height: 1em;
+}
+
+.mcs-problem-head .head-left::before {
+/*content: "LL";*/
+	content: counter(chapter_number)"."counter(chapter_problem_number);
+	color: rgb(var(--mcs-that-fonky-blue-i-like));
+	font-family: LatoWebLight;
+	font-size: 0.8em;
+}
+
+.mcs-problem-head .head-right::after {
+	counter-increment: all_problems;
+	content: counter(all_problems);
+	color: var(--mcs_that_bomb_ass_red);
+	font-family: LatoWebLight;
+	font-style: italic;
+	font-size: 0.8em;
+}
+/*_____________ mcs numbering __ */
+
+
+
+
+/*__ mcs hover/opacity _________ */
+.mcs-img-container img,
+.mcs-problem:hover .mcs-tooltip-text {
+  opacity: 1;
+  transition: opacity 1s;	
+}
+
+.mcs-tooltip .mcs-tooltip-text,
+.mcs-problem:hover .mcs-img-container img {
+	opacity: 0;
+  transition: opacity 1s;	
+}
+
+.mcs-img-container {
+  transition: border 0.5s;
+}
+
+.mcs-problem:hover .mcs-img-container  {
+	border-width: 0.5px;
+}
+
+.mcs-problem:hover .mcs-problem-foot {
+	color: var(--mcs_gray_400);
+  transition: color 1s;	
+}
+
+.mcs-problem-foot {
+  transition: color 1s;	
+}
+
+a.mcs-problem:hover {
+	text-decoration: none;
+}
+
+
+/*_________ mcs hover/opacity __ */
+
+
+
+
+.mcs-problem {
+	width: var(--cellx);
+  height: calc(var(--celly));
+	background-color: transparent;
+	margin: var(--mcs_problem_margin);
+	color: rgba(var(--killerbrightred),1);
+	font-family: 'LatoWebHairline' ;
+	font-variant-numeric: oldstyle-nums;
+	border-radius: 6px;
+	position: relative;
+}
+
+.mcs-problem-foot {
+	position: absolute; 
+	bottom: 8px; 
+	text-align: center; 
+	width: 100%; 
+	font-size: 0.85em;
+	font-family: LatoWeb;
+	color: var(--mcs_gray_600);
+}
+
+
+.mcs-img-container {
+	display: flex;
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	width: calc((var(--cellx) - 8px));
+	height: calc((var(--celly) - 1.25em - 8px));
+	margin-left: calc((var(--cellx) - 8px) / -2);
+	margin-bottom: calc((var(--celly) - 8px) / -2);
+	border-radius: 6px;
+	border: 1px solid var(--mcs_gray_400);
+}
+
+.mcs-img-container img {
+	max-height: calc(var(--cellx) * 0.8);
+	max-width: calc(var(--cellx) * 0.8);
+	width:  100%;
+}
+
+.mcs-tooltip {
+  position: relative;
+	overflow-y: scroll;
+  display: block;  
+	height: 100%;
+	/*width: var(--cellx);*/
+	/*height: var(--celly - 2em);*/
+}
+
+.mcs-tooltip .mcs-tooltip-text {
+	height: calc(100% - 2*5px - 0em);
+	width:  calc(100% - 2*5px);
+	line-height: 105%;
+	font-size: 0.8em;
+  position: relative;
+  z-index: 1;
+	font-family: 'LatoWebLight';
+	overflow-x: hidden;
+	color: var(--mcs-color-tooltip-text);
+}
+
+.mcs-tooltip .mcs-tooltip-text div {
+	border-left: 3.5px solid rgba(var(--mcs-warning-rgb),1);
+	/*border-width: 5px;*/
+	border-radius: 6px;
+}
+
+
+
+
+
+
+/*.banner {
+	top: 0;
+	/*background-color: rgba(var(--mcs-warning),0.4);*!/
+	padding: 0;
+	opacity: 0;
+	transition: opacity 1s;
+	font-size: 0.9em;
+	font: bold 0.8em/1em "LatoWebLight";
+	border-bottom: 1px dotted rgba(var(	--royalpurple),1);
+	color: rgba(var(	--royalpurple),1)!important;
+}*/
+
+
+
