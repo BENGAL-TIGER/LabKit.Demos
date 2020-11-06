@@ -1,0 +1,3 @@
+# Stirling Engine
+
+Build a working Stirling engine powered by a candle.

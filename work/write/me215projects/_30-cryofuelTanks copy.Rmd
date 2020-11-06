@@ -1,0 +1,98 @@
+
+
+# Rocket Cryotanks
+
+Here it is, finally, the replacemnt for Test One. There are two design problems described inside. Pick one. May 3 is the due date, but it's soft: if you need more time, let's discuss.
+
+You may need property data beyond what is in your textbook. Feel free to use other texts, ASHRAE Handbooks, etc. Mathematica has a very nice thermodynamic properties function. The NIST^[@linstrom_nist_2019] Chemistry WebBook may be a good option. Find it at \url{webbook.nist.gov}.
+
+## CoolProp   
+
+Perhaps the most straightforward access to thermodynamic properties is through CoolProp^[@bell_pure_2014], an open-source thermodynamic properties database.
+I generally call CoolProp from within Julia or Python. 
+If you'd like to go that route, I can certainly help you get it all set up. 
+I can probably throw something together so you can use the same Jupyter Notebooks I use for problem solutions.  
+
+There is an online implementation of CoolProp where you can get properties one at a time, with no coding necessary. 
+Find it at\url{https://ibell.pythonanywhere.com}. 
+Here is the list of fluids available in CoolProp: \url{https://www.coolprop.org/fluid_properties/PurePseudoPure.html#list-of-fluids}. 
+
+## This isn't rocket science...  
+If you need help, or are feeling unsure, just ask. This assignment replaces Test One, but I do not intend for you to work on this alone. **Don't work with each other,** but ask me anything. Quite a bit of the physics involved transcend Thermodynamics I, and I suspect my simplifications won't cover every scenario you dream up. 
+
+
+## ...it's rocket engineering  
+
+```{r rocket-fuel, out.width='25%', fig.align='center', fig.cap = "Simple depiction of a rocket fuel system", cache=TRUE, message=FALSE, echo=FALSE}
+knitr::include_graphics("./figures/rocket-fuel.png")
+```
+
+Storing Cryogenic liquids is a challenging endeavor.
+Cryogenic liquids have boiling points that are far below ambient temperature. 
+When storing them, a major challenge is reducing boil-off. 
+The cryogen is under saturation conditions. 
+Any heat transfer into the tank causes some of the cryogen to boil away, a serious concern for applications that requires liquid cryogen (as opposed to very cold gas).
+
+Consider a rocket fueled by liquid methane (LMG), with liquid oxygen (LOX) oxidizer. 
+You are charged with designing the fuel system. 
+We’ve already determined how much fuel and oxidizer are required to complete the mission. Your major concern is the loss of LMG and LOX while the rocket sits on the pad. You will be launching from the New Mexico desert in mid-June, and the rocket may sit on the pad for up to 2 hours after fueling. 
+Because you’re so good at thermodynamics, you know you have several options at your disposal:   
+
+1. Increase tank pressure.
+1. Insulate the tanks.
+1. Load extra cryogens. 
+
+## Your responsibilities   
+
+1. Size both tanks. 
+1. Specify the initial masses of LOX and LMG to be loaded into each tank. This is the amount before any boiloff begins. 
+1. Specify operating pressure of each tank. 
+1. Specify the insulation and its thickness. 
+
+## Constraints and requirements  
+
+1. The time between loading and launch is 2 hours.
+1. The outer wall skin temperature T\textsubscript{w} = 60\,°C.
+1. The inner wall skin temperature T\textsubscript{s} = T\textsubscript{sat} for the fluid, at the operating pressure you specify. 
+1. A minimum of 59 kg LMG and 235 kg LOX must be present at launch.
+1. Assume the tanks are cylinders (flat top/bottom) with inner diameter D = 45 cm. 
+1. Each tank has a maximaum allowable working pressure of 2 bar.
+1. Neither tank can contain > 80\% liquid, by volume. 
+1. A maximum of 4 inches is available between the tank outer wall and the rocket inner wall. 
+1. It's a rocket. Low weight is holy and just.
+
+
+
+
+## Heat Transfer    
+
+\noindent
+In our case, we will simplify the heat transfer portion to basic conduction. Assume heat transfer into the tanks can be expressed as
+
+\begin{equation}
+ \dot Q_{in} = \frac{T_s - T_w}{R}
+\end{equation}
+
+where 
+
+\begin{gather*}
+  \begin{split}
+    T_s &\equiv \text{outer wall skin temperature} \\
+    T_w &\equiv \text{inner wall skin temperature} = T_{sat} \\
+    R &\equiv   \text{thermal resistance} = \frac{L}{kA} 
+  \end{split} \\
+ \qquad
+  \begin{split}
+   L & \equiv \text{insulation thickness} \\
+   k & \equiv \text{insulation thermal conductivity} \\
+   A & \equiv \text{tank surface area} \\
+  \end{split} \\ {}
+\end{gather*}
+
+Thermal resistance _R_ is _sometimes_ the R-value you see on insulation packaging, but the units are rarely given on the product label. 
+However, you can usually find the thermal conductivity _k_ in datasheets at the manufacturers website. 
+Table A19 in your text lists thermal conductivity for many common materials.
+You might be interested in Aerogel, an extreme performance insulation, where
+$k = 0.023\, W/m \cdot K$.
+I will help you find _k_ (or any values) if you ask.
+

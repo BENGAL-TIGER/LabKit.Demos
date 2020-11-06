@@ -1,0 +1,49 @@
+
+
+ 
+# Quick Chill 
+
+**N05-164, US Navy Request for Proposals**
+
+_Technology areas_     
+Materials/Processes, Human Systems  
+
+_Objective_     
+Develop an energy efficient, rugged, shipboard capability to quickly chill a canned beverage product (e.g., soda pop, or "soft drink") to help eliminate the requirement for operating traditional vending machines at sea.  
+
+## Project Summary
+
+For the primary customer on a ship (male, 22 years old), a key Quality of Life (QOL) element as documented by customer surveys is the ability to obtain a cold soft drink from a vending machine. That the per capita consumption of the commodity is almost double the U.S. per capita rate (52 gal a year) testifies to the popularity and desirability of this service. To satisfy this demand, the Navy as part of its QOL programs provides soft drink vending machines on ships. The design of the ship (storerooms separated from selling locations) coupled with the lack of transportation aids and the requirement to have up to 14 machines on larger ships has driven large platforms to devote up to six (6) man-years of effort to keep the machines filled. As the cost of manpower has increased, the need to find alternatives to provide this key QOL product has grown.
+
+The desire is to develop a device capable of chilling a soft drink within 10 seconds, which is estimated to be the upper limit, or customer wait time tolerance, for the beverage consumer. The militarized version of the device needs to be compact and reliable, with little or no in-service maintenance requirements. Such a device, when distributed throughout the shipboard environment, could provide the following benefits:  
+
+1. Eliminate, or minimize, shipboard requirements for environmentally threatening use of refrigerants (o-zone deleting substances)  
+1. Potentially remove all labor requirements involved in the operation of vending machines.  
+1. Removing the requirement for the product to be chilled at the point-of-sale, enabling more purchasing and storage flexibility to both the retailer (Ship’s Store) and the consumer (sailor)  
+
+## Background
+
+The rapid chilling of bulk food products (e.g., dairy, fruits & vegetables) and especially solid food (e.g., carcass meat, fresh fish) is a long sought-after industry endeavor that has posted modest advances, with futuristic sights on a capability akin to a "reverse microwave". Restricted by the same heat transfer principles, the objective to rapidly chill a packaged consumer beverage can proceed towards a similar outcome when, and if, technology pushes past the decades-old capability of the vending machine. Rapid chill, with chill-on-demand service, is an evolutionary step away from the trappings of 20th century vending technology.
+
+Consumer appeal for a chill on demand capability is demonstrated in sales of counter-top, household products promising to chill a bottle of wine in six minutes, or a canned beverage in one minute. However, products currently known to be available are extremely limited in applicability, essentially relegated to home use given the need to add both water and ice to the device. Other chill-on-demand technologies include a self-refrigerating beverage can promising to cool 30 °F in three minutes.
+
+While these two examples of technological applications demonstrate the variability in potential approaches for obtaining the desired objective, neither is close to the required shipboard solution (ease-of-use, adequate chilling within 10 seconds). In addition, before any organization will embrace a modern technology, it will determine if the cost of new technology is "affordable" either in acquisition cost or "tradeoff" cost of providing the current service. The shipboard technical requirement exceeds any technology known to be available in the marketplace, and therefore presents unusually high technical risk. For these reasons, some leeway may be accommodated for the desired objective considering the proposed study approaches received.
+
+## Project
+
+Investigate alternative technologies/approaches to rapidly chill aluminum can packaged soft drinks/beverages. Evaluate and document alternatives and a developmental approach for one or more candidate devices.
+
+A promising method is to have a chamber (or chambers) submerged in the drink. In the chamber is a fluid under pressure that will vaporize at atmospheric pressure and normal room temperature. When the chambers are opened, the fluid vaporizes. The Second Law demands the vaporization. The First Law demands the energy required for the phase change to take place. That energy is taken from anything in contact; it cannot be avoided. In this case, the energy is stolen from the soft drink, cooling it. _Yes, this is what causes an aerosol can to get cold when sprayed._ 
+
+Other methods abound, but I'm less familiar with how they work. You're free to propose anything feasible. I'm willing to help you sort out your ideas as well. 
+
+1. Develop a device capable of chilling a soft drink within 10 seconds. 
+1. Assume the soft drink is 12 fl. oz. of water.  
+1. Assume the soft drink is initially 30\,°C and must be chilled to 1\,°C. 
+1. Use any of the substances tabulated in any textbook, ASHRAE manuals, NIST, etc.
+1. Check for toxicity. I'm no advertising expert, but killing customers seems like it may potentially harm sales.
+
+
+			
+
+

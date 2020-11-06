@@ -1,0 +1,72 @@
+
+# Home Energy Audit 
+
+As energy conservation efforts have intensified among the Transportation, Industrial, and Business sectors, the Residential sector has emerged as an increasingly important opportunity to reduce our energy footprint. HVAC (heating, ventilation, and air conditioning), water heaters, and clothes dryers require enormous amounts of energy. Energy traipses through doors and windows as if it carries a perpetual red carpet invitation.
+
+## Twenty-one questions 
+
+During winter, do you stay away from windows because it's cold over there? Does it seem like the cold is tumbling into your room near the windows? Do your windows ever fog up or collect condensation during the summer? Do you know anyone that has performed a home energy audit? Have you? Without looking, what information appears on an [Energy Star EnergyGuide label?](https://www.snopud.com/site/content/images/ee/eguidelabel.jpg) label? Would you allow your power utility to cycle your HVAC system on/off during periods ono peak power usage in exchange for discount pricing?
+
+## Energy Guides and Audits
+
+Energy savings guides are everywhere. They are published by government energy agencies, environmental interest groups, utilities, home builders and appliance companies, and organizations that perform professional energy audits, of course. 
+
+
+<br />
+<blockquote>
+
+ ...the only things on the 'net more prevalent
+  than energy guides are cat videos...
+
+<p style="text-align: right;">--- marcucius, ca 2020 </p>
+
+</blockquote>
+<br />
+
+
+Here are some examples of guides and labels from around the world: Canada ([guide](https://www.nrcan.gc.ca/energy-efficiency/energy-efficiency-homes/make-your-home-more-energy-efficient/20550), [labels](https://www.nrcan.gc.ca/energy-efficiency/energy-efficiency-products/product-information/windows-doors-skylights/sample-labels-windows-doors-and-skylights/13958)),
+[Hong Kong](https://www.clp.com.hk/en/my-home-site/energy-saving-ideas-site/understanding-energy-labels-site/PublishingImages/logo_EnergyLabel_detail.jpg), European Union ([labeling](https://ec.europa.eu/info/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/energy-label-and-ecodesign/about_en), [consumer guide](figures/MJ0117061ENN.en.pdf)), [Barbados](figures/barbadoslabel.png), and an infographic from the [US Department of Energy](https://www.energy.gov/sites/prod/files/styles/borealis_article_hero_respondxl2/public/energysaver2017_HomeEnergyAudits.png?itok=JTSoNyts)
+
+## The Project: Home Energy Audit
+
+Home energy audits tend to come in only two flavors: professional-caliber audits that require specialized instrumentation and consumer-grade versions that have lots of pretty graphics (perhaps your bias meter just started beeping wildly). Let's be clear: they get the job done, but pass little of the underlying science to the user. Moreover, they have little appeal to people that aren't already wanting to perform an energy audit.
+
+Your mission is to create a more balanced home energy audit.
+
+
+
+
+
+
+
+
+
+
+```{ .numberLines}
+
+notes notes notes 
+=================
+
+- has thermo
+- dual emphasis on cost and environment
+- for parent and child, perhaps distributed as class project
+  - have child do some plotting for the child. maybe $$ vs temp/season vs other relevant factors
+  - have some instant activities
+    - reading meters with appliances on/off, etc
+    - ht trans through windows/door
+  - kid makes conclusions, maybe predicts savings
+- has thermo
+  - CLARIFY, not SIMPLIFY. use natgeo example
+  - maybe a kit with inexpensive sensors, or uses one of those temperature/hygromters that goes in reptile aquarium
+
+- output
+  - maybe a guide
+  - maybe an full featured app
+  - maybe an app that uses a phone/pad/laptop's sensors for time, temp, etc
+  - you could storyboard an app, and implement the calculations in another environment (preferably not spreadsheet)
+  
+
+```
+
+
+
